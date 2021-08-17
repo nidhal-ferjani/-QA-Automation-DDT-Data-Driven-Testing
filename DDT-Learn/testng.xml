@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven TestSuite">
+  <test thread-count="5" name="Sign in Test">
+  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="env" value="Test"></parameter>
+  <parameter name="url" value="https://signup.ebay.com/pa/crte?usage=2943"></parameter>
+    <classes>
+      <class name="com.datadriven.test.HalfEbayTest"/>
+    </classes>
+  </test> <!-- Sign in Test -->
+</suite> <!-- Data Driven TestSuite -->
